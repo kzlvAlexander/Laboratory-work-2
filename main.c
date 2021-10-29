@@ -45,6 +45,7 @@ uint32_t hex_сhar_to32(char c)
         return c - '0';
 }
 
+//Преобразование из 16тирички
 uint1024_t hex_to_1024(char *hex)
 {
     int len = strlen(hex);
@@ -68,6 +69,7 @@ uint1024_t hex_to_1024(char *hex)
     return temp;
 }
 
+//Перевод в 16тиричку
 char *u1024_to_hex(uint1024_t temp)
 {
     char *res = (char *)malloc(257 * sizeof(char));
@@ -93,6 +95,7 @@ char *u1024_to_hex(uint1024_t temp)
     return res;
 }
 
+//Вывод в поток, перед выводом перевод в 10-ую
 void printf_value(uint1024_t temp)
 {
     char *t = (char *)malloc(256 * sizeof(char));
@@ -159,6 +162,7 @@ void printf_value(uint1024_t temp)
     printf("%lld\n", s);
 }
 
+//Сложение
 uint1024_t add_op(uint1024_t a, uint1024_t b)
 {
     uint1024_t temp;
@@ -174,6 +178,7 @@ uint1024_t add_op(uint1024_t a, uint1024_t b)
     return temp;
 }
 
+//Вычитание
 uint1024_t subtr_op(uint1024_t a, uint1024_t b)
 {
     uint1024_t temp;
@@ -189,6 +194,7 @@ uint1024_t subtr_op(uint1024_t a, uint1024_t b)
     return temp;
 }
 
+//Умножение
 uint1024_t mult_op(uint1024_t a, uint1024_t b)
 {
     uint1024_t temp;
@@ -234,6 +240,7 @@ uint1024_t mult_op(uint1024_t a, uint1024_t b)
     return temp;
 }
 
+//Ввод переменной
 uint1024_t scanf_value()
 {
     char temp[257];
@@ -242,6 +249,7 @@ uint1024_t scanf_value()
     return (hex_to_1024(temp));
 }
 
+//Пример
 int main()
 {
     uint1024_t a, b;
