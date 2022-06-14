@@ -101,67 +101,67 @@ void printf_value(uint1024_t temp)
     char *t = (char *)malloc(256 * sizeof(char));
     t = u1024_to_hex(temp);
     printf("%s\n", t);
-    // unsigned long long i, s, k, p;
-    // s = 0;
-    // p = sizeof(t)-1;
-    // printf("%llu",p);
-    // for (i = 0; t[i] != '\0'; i++)
-    // {
-    //     switch (t[i])
-    //     {
-    //     case 'a':
-    //         k = 10;
-    //         break;
-    //     case 'b':
-    //         k = 11;
-    //         break;
-    //     case 'c':
-    //         k = 12;
-    //         break;
-    //     case 'd':
-    //         k = 13;
-    //         break;
-    //     case 'e':
-    //         k = 14;
-    //         break;
-    //     case 'f':
-    //         k = 15;
-    //         break;
-    //     case '1':
-    //         k = 1;
-    //         break;
-    //     case '2':
-    //         k = 2;
-    //         break;
-    //     case '3':
-    //         k = 3;
-    //         break;
-    //     case '4':
-    //         k = 4;
-    //         break;
-    //     case '5':
-    //         k = 5;
-    //         break;
-    //     case '6':
-    //         k = 6;
-    //         break;
-    //     case '7':
-    //         k = 7;
-    //         break;
-    //     case '8':
-    //         k = 8;
-    //         break;
-    //     case '9':
-    //         k = 9;
-    //         break;
-    //     case '0':
-    //         k = 0;
-    //         break;
-    //     }
-    //     s = s + k * pow(16, p);
-    //     p--;
-    // }
-    // printf("%lld\n", s);
+     unsigned long long i, s, k, p;
+     s = 0;
+     p = sizeof(t)-1;
+     printf("%llu",p);
+     for (i = 0; t[i] != '\0'; i++)
+     {
+         switch (t[i])
+         {
+         case 'a':
+             k = 10;
+             break;
+         case 'b':
+             k = 11;
+             break;
+         case 'c':
+             k = 12;
+             break;
+         case 'd':
+             k = 13;
+             break;
+         case 'e':
+             k = 14;
+             break;
+         case 'f':
+             k = 15;
+             break;
+         case '1':
+             k = 1;
+             break;
+         case '2':
+             k = 2;
+             break;
+         case '3':
+             k = 3;
+             break;
+         case '4':
+             k = 4;
+             break;
+         case '5':
+             k = 5;
+             break;
+         case '6':
+             k = 6;
+             break;
+         case '7':
+             k = 7;
+             break;
+         case '8':
+             k = 8;
+             break;
+         case '9':
+             k = 9;
+             break;
+         case '0':
+             k = 0;
+             break;
+         }
+         s = s + k * pow(16, p);
+         p--;
+     }
+     printf("%lld\n", s);
 }
 
 //Сложение
