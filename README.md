@@ -1,2 +1,2 @@
-# Laboratory-work-2
-Laboratory work 2 in ITMO
+# Laboratory-work-2-6
+Laboratory work 2-6 in ITMO
